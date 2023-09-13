@@ -1,0 +1,250 @@
+:root{
+    --primary-color: #854280;
+    --white: #ffffff;
+    --light-gary-color: #eeeeee;
+    --gap: 3rem;
+    box-sizing: border-box;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    color: var(--primary-color);
+    max-width: 1500PX;
+    align-items: center;  
+}
+html{
+    scroll-behavior: smooth;}
+a{
+    text-decoration: none;
+    }
+.menu{
+    background: rgba(0, 0, 0, 0.854);
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gary-color);
+    z-index: 1;
+}
+
+
+.segundo_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.menu h1{
+    font-size: 5rem;
+    padding: 15px;
+    color: var(--white);
+    transition: all 300ms ease-in-out;
+    
+}
+.menu h1 a{
+    color: inherit;
+}
+.menu ul{
+    font-family:sans-serif;
+    list-style:none;
+    display: block;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 15px;
+}
+.menu ul li{
+    float: left;
+}
+.menu ul li a{
+    display: block;
+    color: rgb(247, 251, 250);
+    padding: 20px;
+    position: relative;
+}
+.menu ul li a::after{ 
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left:  25%;
+    width: 0;
+    height: 0.2rem;
+    background: darkslateblue;
+    transition: all 300ms ease-in-out;
+}
+.menu ul li a:hover::after{
+    width: 50%''';
+
+} 
+.menu_spacing{
+    height: 80px;
+}
+.main_bg{
+    background-image: url('../img/base.svg');
+    background-position: center center;
+    background-size: cover ;
+    height: 800px;
+    color: var(--white);
+    align-items: center;
+    justify-content:space-around;
+    display: grid;
+    margin: 0 auto;
+}
+.intro_main_content{
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 100vh;
+    color:aquamarine;
+    
+}
+.intro_text, .intro_img{
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: center;
+    font-family:monospace;
+}
+.intro_img img {
+    
+    max-width: 500px;
+    max-height: 400px;
+    width: 500px;
+    height: 400px;
+    padding-left: 50px;
+}
+.RPG_text{
+    text-align: center;
+}
+.intro_main_content h1{
+    padding-left: 20px;
+}
+.segundo_main_bg{
+    background: #ffffff;
+    margin: 30px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    color:firebrick;
+    text-align: center;
+    justify-content:center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 400px;}
+.segundo_main_bg h1{
+    margin: 30px;
+}
+.grid_terceiro_texto{
+    height: 100vh;
+    color: var(--white);
+    
+}
+.grid_conteudo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 30px;
+    counter-reset: grid-couter;
+}
+.grid_conteudo h6{
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+.grid_conteudo h6::before{
+    counter-increment:grid-couter;
+    content: counter(grid-couter);
+    position: absolute;
+    font-size: 5rem;
+    font-style: italic;
+    top: -1rem;
+    left: 0;
+    transform: rotate(5deg);
+}
+.article_text{
+    padding: 20px;
+}
+.article_text h6{
+    font-size: 3rem;
+    text-align: center;
+}
+.grid_conteudo p{
+    padding-left: 20px;
+}
+.main_bg p{
+    margin: 20px;
+    max-width: 1200px;
+}
+.main_bg h1{
+    width: 100%;
+    
+}
+.white_bg{
+    background: var(--white);
+}
+.main_containe{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap);
+    
+}
+.section{
+    min-height: 100vh;
+}
+.only_backgroud{    
+    background-image: url('../img/39789.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    height: auto;
+}
+.apenas_o_nao{
+    color: black;
+    text-decoration:underline;
+}
+.league_of_legends{
+    color: red;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.titulo{
+    text-align: center;
+    padding: 20px;
+    
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 6rem;
+}
+h2{
+    font-size: 5.5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+h3{
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+h4{
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+h5{
+    font-size: 4rem;
+}
+h6{
+    font-size: 3.5rem;
+}
+p{
+    margin-bottom: 3rem;
+}

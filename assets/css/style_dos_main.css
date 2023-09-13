@@ -1,0 +1,218 @@
+.main_bg{
+    background-image: url('../img/base03.svg');
+    background-size: cover;
+    background-position: center center;
+}
+.only_backgroud{
+    background-image: url('../img/armas.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.white_bg{
+    background: white;
+    background-size: cover;
+    background-position: center center;
+}
+.main_content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding:10rem var(--gap);
+}
+.section{
+    min-height: 120vh;
+}
+.intro_main_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    min-height: 100vh;
+    text-align: center;
+}
+.intro_text, .main_img{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.intro_text h2{
+    padding-top: 2rem;
+    color: rgba(25, 78, 110, 0.927);
+    font-family:'Sedgwick Ave Display', cursive; ;
+}
+.intro_text p {
+    padding-bottom: 2rem;
+}
+.main_img{
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+
+}
+.main_img img{
+    max-width: 100% ;
+    height: auto;
+    padding-left: 7rem;
+}
+.main_img1 img{
+    max-width: 70% ;
+    padding-left: 7rem;
+    padding-top: 3rem;
+}
+.segundo_main_bg{
+    color:darkseagreen;
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.segundo_main_bg h6{
+    padding: 3rem;
+}
+.apenas_o_nao{
+    color: black;
+}
+.league_of_legends{
+    color: red;
+    font-family:'Sedgwick Ave Display', cursive; ;
+    text-transform: uppercase;
+}
+.grid_terceiro_texto{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: nowrap;
+   min-height: 100vh;
+   align-items: center; 
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+    counter-reset: grid-counter;
+}
+.text_lol{
+    padding-left: 4rem;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.titulo{
+    text-align: center;
+}
+.sub_titulo{
+    padding-bottom: 3rem;
+    color:rgb(61, 125, 71);
+}
+.galery_img{
+    width: 100%;
+    max-width: 36rem;
+    max-height: 36rem;
+    overflow: hidden;
+}
+.galery_img img{
+    transition: all 300ms ease-in-out;
+}
+
+.galery_img img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+
+}
+.texto_aleatorio{
+    text-transform: uppercase;
+    padding-left: 5rem;
+    color: black;
+}
+.titulo01{
+    padding-left: 5rem;
+    color: black;
+    font-family:'Sedgwick Ave Display', cursive; ;
+}
+.responsive_table{
+    color: black;
+}
+.responsive_table table tfoot{
+    padding-bottom: 3rem;
+}
+.texto_da_tabela{
+    padding-bottom: 5rem;
+    overflow-x: auto;
+}
+.contac_form{
+    grid-column:span 2;
+}
+.contac_form fieldset{
+    justify-content: left;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: none;
+    gap: var(--gap);
+}
+.form_group{
+    flex: 1 1 320px;
+}
+.form_group label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.form_group input, .form_group textarea{
+    border: none;
+    background: var(--white);
+    padding: 1.5rem;
+    width: 100%;
+    outline: none;
+}
+.form_group input:focus, .form_group textarea:focus{
+    box-shadow: 2px 2px 15px 5px  crimson;
+   
+}
+.full_width{
+    width: 100%;
+    flex:1 1 100% ;
+}
+.form_group button{
+    border:0.5rem solid var(--white);
+    background: none;
+    color: none;
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+    
+}
+.contac_form legend{
+    font-style: italic;
+    font-size: 1.5rem ;
+    margin-bottom: 3rem;
+}
+.form_group button:hover{
+    background:var(--white);
+    color: var(--primary-color);
+}
+.footer{
+    text-align: center;
+    font-family:'Sedgwick Ave Display', cursive; ;
+}
+.footer p {
+    color: black;
+}
+@media (max-width: 800px) {
+    .intro_main_content, .grid {
+        grid-template-columns: 1fr;}
+    .galery_img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+    }
+    .galery_img img{
+        width: 100%;
+    }
+    .main_img1 img{
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        padding-top: 10rem;
+    }
+    }
+    
